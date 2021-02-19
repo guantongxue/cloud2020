@@ -53,6 +53,11 @@ public class PaymentController {
         return serverPort;
     }
 
+    @GetMapping(value = "/payment/zipkin")
+    public String getPaymentZipKin(){
+        return "hi i am paymnetZipkin server";
+    }
+
     @GetMapping(value = "/payment/feign/timeout")
     public String paymentFeignTimeout(){
         try {
